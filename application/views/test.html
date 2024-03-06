@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+<style>
+  .container{
+    top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);  position: absolute;
+    
+    }
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      display: flex;
+    }
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+    .carousel-inner .carousel-item {
+      transition: transform 1.5s ease;
+    }
+    .carousel-inner .carousel-item-right,
+    .carousel-inner .carousel-item-left {
+      transform: translateX(0);
+    }
+    /* body {
+      background-color: #444444;
+    } */
+    #pad {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .color-1 {
+      background-color: rgb(255, 140, 140);
+    }
+    .color-2 {
+      background-color: rgb(255, 205, 140);
+    }
+    .color-3 {
+      background-color: rgb(173, 255, 140);
+    }
+    .color-4 {
+      background-color: rgb(140, 186, 255);
+    }
+    .color-5 {
+      background-color: rgb(194, 140, 255);
+    }
+    .bordered {
+      border: rgb(220, 220, 220) medium solid;
+      border-radius: 10px;
+      padding: 5px 5px 5px 5px;
+      height: 10rem;
+    }
+    /* .overlay {
+      z-index: 1;
+      padding: 0;
+      border: none;
+      background: rgba(68, 68, 68, 0.5);
+    } */
+</style>
+</head>
+<body>
+    <div class="">
+        <input type="password" id="passwordInput" placeholder="Enter your password">
+        <span class="password-toggle" id="togglePassword">
+          <i class="far fa-eye eyeon"></i>
+          <i class="fas fa-eye-slash eyeoff"></i>
+        </span>
+      </div>
+
+      <div class="container ">
+        <div class="row">
+          <div class="col-4 mx-auto">
+            <div class="bordered">
+              <div class="row mx-auto ">
+                <div
+                  id="carousel-1"
+                  class="carousel slide w-100"
+                  data-ride="carousel"
+                >
+                  <div class="carousel-inner ">
+                    <div class="carousel-item active ">
+                      <div class="col-4 " id="pad">
+                        <div class="card  color-1"></div>
+                      </div>
+                    </div>
+                    <div class="carousel-item ">
+                      <div class="col-4 " id="pad">
+                        <div class="card  color-2"></div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="col-4 " id="pad">
+                        <div class="card  color-3"></div>
+                      </div>
+                    </div>
+                    <!-- <div class="carousel-item h-100">
+                      <div class="col-4 h-100" id="pad">
+                        <div class="card h-100 color-4"></div>
+                      </div>
+                    </div>
+                    <div class="carousel-item h-100">
+                      <div class="col-4 h-100" id="pad">
+                        <div class="card h-100 color-5"></div>
+                      </div>
+                    </div> -->
+                  </div>
+                  <a
+                    class="carousel-control-prev"
+                    href="#carousel-1"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon bg-dark rounded-circle"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#carousel-1"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon bg-dark rounded-circle"
+                      id="bordered-2"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+       
+   <script src="js/jquery-1.12.4.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/script.js"></script>
+</body>
+</html>

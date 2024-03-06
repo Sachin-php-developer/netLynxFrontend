@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barber Shop</title>
+<!-- fonts link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+  <div class="d-flex m-view">
+    <div class="col-lg-2">
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="navbar-logo" href="#">
+          <img src="./images/main-logo.png"/>
+        </div>
+        <div class="d-flex justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-list" href="index.html">
+                <div class="nav-list-img-box">
+                  <img src="./images/location.png"/>
+                </div>
+                <p class="nav-link">Location</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-list" href="staff.html">
+                <div class="nav-list-img-box">
+                  <img src="./images/profile.png"/>
+                </div>
+                <p class="nav-link">Staff</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-list" href="service.html">
+                <div class="nav-list-img-box">
+                  <img src="./images/task-square.png"/>
+                </div>
+                <p class="nav-link">Service</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-list" href="dateTime.html">
+                <div class="nav-list-img-box">
+                  <img src="./images/calendarT.png"/>
+                </div>
+                <p class="nav-link">Date & Time</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-list" href="cart.html">
+                <div class="nav-list-img-box">
+                  <img src="./images/Shop.png"/>
+                </div>
+                <p class="nav-link">Cart</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-list" href="information.html">
+                <div class="nav-list-img-box">
+                  <img src="./images/personalcard.png"/>
+                </div>
+                <p class="nav-link">Information</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-list" href="finish.html">
+                <div class="nav-list-img-box">
+                  <img src="./images/import.png"/>
+                </div>
+                <p class="nav-link">Finish</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="col-lg-10">
+     <header id="header">
+        <div class="container header-container">
+            <div class="cart-header">
+              <h1 class="heading">Fill in your Information</h1>
+              <div class="cart-img-box">
+                <img src="./images/cartImg.png" class="cart-img-"/>
+              </div>
+            </div>
+        </div>
+     </header>
+    <div class="container">
+     <div class="main- information-main-">
+      <div class="cart-main info-main">
+        <h2 class="confirmtext">Your Information</h2>
+         <div class="info-main--">
+            <div class="information-box">
+                <div class="input-box">
+                  <label for="exampleFormControlInput1" class="form-label">First Name<span>*</span></label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name">
+                </div>
+                <div class="input-box">
+                  <label for="exampleFormControlInput1" class="form-label">Last Name<span>*</span></label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Last Name">
+                </div>
+                <div class="input-box">
+                  <label for="exampleFormControlInput1" class="form-label">Email<span>*</span></label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="staff@gmail.com">
+                </div>
+                <div class="input-box">
+                  <label for="exampleFormControlInput1" class="form-label">Phone<span>*</span></label>
+                  <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="(111) 222-3333">
+                </div>
+                <div class="customer-img-box">
+                  <div class="customer-img-main">
+                      <p class="form-label">Customer Picture</p>
+                      <div class="customer-img-details">
+                        <div class="customer-img-">
+                          <img src="./images/customer-img.png"/>
+                      </div>
+                      <div class="confirm-btn">
+                        <button type="button" class="btn m-btns new-loc-btn">Search Image</button>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+               </div>
+         </div>
+      </div>
+    </div>
+    <footer id="footer" class="mt-auto cart-footer">
+       <div class="help-both-btns ">
+         <div class="help-btn">
+          <div>
+            <button type="button" class="btn m-btns btn-primary back-btn m-back-btn">Back</button>
+          </div>
+          <div>
+              <button type="button" class="btn m-btns email-btn">Send SMS / Email</button>
+          </div>
+          <div>
+            <button type="button" class="btn m-btns btn-danger need-help-btn">Need Help?</button>
+          </div>
+         </div>
+       </div>
+    </footer>
+     </div>
+    </div>
+  </div>
+
+
+   <script src="js/jquery-1.12.4.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/script.js"></script>
+  </body>
+</html>
